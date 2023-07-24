@@ -1,0 +1,123 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #2A313C;
+
+
+}
+
+.content {
+    width: 1320px;
+    height: 695px;
+    display: flex;
+    align-items: center;
+
+}
+
+.image {
+    width: 596px;
+    height: 695px;
+}
+
+.rightContent {
+    width: 596px;
+    height: 529px;
+    margin-left: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: Orbitron;
+}
+
+.rightContent h1 {
+    font-size: 64px;
+    line-height: 74px;
+    color: #FFF;
+    margin: 0;
+    text-align: left;
+}
+
+.fireText {
+    width: 596px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.rightContent p {
+    text-align: left;
+    font-size: 20px;
+    width: 596px;
+    height: auto;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.cards {
+    width: 596px;
+    height: 125px;
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards img {
+    width: 174px;
+    height: 103px;
+}
+
+.cards img:first-child {
+    box-shadow: 0px 0px 20px 15px #3B3B3D46;
+    border-radius: 10px; /* You can adjust this value to your liking */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 50%;
+        height: auto;
+    }
+
+    .rightContent {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .rightContent h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .fireText, .cards {
+        width: 100%;
+    }
+
+    .rightContent p {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

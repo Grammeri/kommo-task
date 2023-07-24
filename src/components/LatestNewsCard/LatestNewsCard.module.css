@@ -1,0 +1,33 @@
+.card{
+    height: 321px;
+    font-family: Orbitron;
+    flex-basis: calc(50% - 20px);
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+h3{
+    font-size: 16px;
+    line-height: 16px;
+    color: #57B8FF;
+
+}
+
+p{
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .contentContainer {
+        flex-direction: column;
+    }
+    .contentContainer .leftSide, .contentContainer .rightSide {
+        width: 50%;
+    }
+    .contentContainer .rightSide {
+        display: none;
+    }
+
+}
